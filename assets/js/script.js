@@ -18,6 +18,7 @@ class Smartphone {
         this.credito += unaRicarica;
     }
     chiamata(durataOre, durataMinuti, durataSecondi) {
+        let sottr = this.carica - 0.2 * this.minutiChiamata;
         let ore = this.oreChiamata + durataOre;
         let minuti = this.minutiChiamata + durataMinuti;
         let secondi = this.secondiChiamata + durataSecondi;
@@ -29,7 +30,6 @@ class Smartphone {
         minPiu;
         secPiu < 60 ? (this.secondiChiamata = secondi) : secPiu;
         this.numeroChiamate++;
-        this.carica - 0.2 * this.minutiChiamata;
     }
     numero404() {
         this.credito;
@@ -48,6 +48,7 @@ console.log(iPhone);
 iPhone.ricarica(50);
 iPhone.chiamata(4, 59, 10);
 iPhone.chiamata(1, 10, 10);
+iPhone.getNumeroChiamate();
 // function time() {
 //   let h: number = 0;
 //   let mn: number = 0;

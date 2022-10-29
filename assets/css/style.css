@@ -40,8 +40,6 @@
 /* The screen (or content) of the device */
 .smartphone .content {
     width: 220px;
-    height: 215px;
-    margin-top: 75px;
     background: white;
     display: flex;
     flex-wrap: wrap;
@@ -69,13 +67,40 @@
     margin-top: 10px;
 }
 
+.opz_ricarica {
+    border-top: 2px solid red;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 1px 0px 12px 0px black;
+}
+
+.titolo {
+    margin-left: 10px;
+}
+
+
 input {
     height: 25px;
 }
 
 button {
-    margin: 12px;
-    width: 33px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 5px;
+    width: 49px;
     height: 31px;
 
+}
+
+.online,
+.ricarica_cassa {
+    font-size: 0.8rem;
+}
+
+.online {
+    color: red;
+}
+
+p {
+    font-size: 0.8rem;
 }
