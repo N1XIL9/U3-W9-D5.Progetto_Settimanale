@@ -20,7 +20,7 @@ class Smartphone {
   }
 
   chiamata(durataOre: number, durataMinuti: number, durataSecondi: number) {
-    let sottr = this.carica - 0.2 * this.minutiChiamata;
+    this.carica - 0.2 * this.minutiChiamata;
     let ore = this.oreChiamata + durataOre;
     let minuti = this.minutiChiamata + durataMinuti;
     let secondi = this.secondiChiamata + durataSecondi;

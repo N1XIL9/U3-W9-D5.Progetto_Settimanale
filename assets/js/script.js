@@ -18,7 +18,7 @@ class Smartphone {
         this.credito += unaRicarica;
     }
     chiamata(durataOre, durataMinuti, durataSecondi) {
-        let sottr = this.carica - 0.2 * this.minutiChiamata;
+        this.carica - 0.2 * this.minutiChiamata;
         let ore = this.oreChiamata + durataOre;
         let minuti = this.minutiChiamata + durataMinuti;
         let secondi = this.secondiChiamata + durataSecondi;
