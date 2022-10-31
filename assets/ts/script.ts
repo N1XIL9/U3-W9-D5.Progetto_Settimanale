@@ -20,9 +20,6 @@ class Smartphone {
   }
 
   chiamata(durataOre: number, durataMinuti: number, durataSecondi: number) {
-    // NON CAPISCO PERCHé NON FUNZIONA LO SCALO DEL CREDITO
-    this.carica - 0.2 * this.minutiChiamata;
-
     // -----------
     let ore = this.oreChiamata + durataOre;
     let minuti = this.minutiChiamata + durataMinuti;
@@ -34,6 +31,7 @@ class Smartphone {
     minPiu < 60 ? (this.minutiChiamata = minuti) : minPiu;
     minPiu;
     secPiu < 60 ? (this.secondiChiamata = secondi) : secPiu;
+    this.credito -= 0.2 * durataMinuti + 12 * durataOre;
     this.numeroChiamate++;
   }
 
