@@ -18,7 +18,9 @@ class Smartphone {
         this.credito += unaRicarica;
     }
     chiamata(durataOre, durataMinuti, durataSecondi) {
+        // NON CAPISCO PERCHé NON FUNZIONA LO SCALO DEL CREDITO
         this.carica - 0.2 * this.minutiChiamata;
+        // -----------
         let ore = this.oreChiamata + durataOre;
         let minuti = this.minutiChiamata + durataMinuti;
         let secondi = this.secondiChiamata + durataSecondi;
