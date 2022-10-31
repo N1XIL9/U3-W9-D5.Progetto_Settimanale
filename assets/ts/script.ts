@@ -55,7 +55,11 @@ console.log(iPhone);
 iPhone.ricarica(50);
 iPhone.chiamata(4, 59, 10);
 iPhone.chiamata(1, 10, 10);
+iPhone.numero404();
 iPhone.getNumeroChiamate();
+iPhone.azzeraChiamate();
+
+// NO TIME
 
 // function time() {
 //   let h: number = 0;
